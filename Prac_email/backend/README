@@ -1,0 +1,27 @@
+# Needed .env
+
+# =========================
+# Gmail (Google SMTP)    работает
+# =========================
+
+GMAIL_SMTP_HOST=smtp.gmail.com
+GMAIL_SMTP_PORT=465
+GMAIL_SMTP_SECURE=true
+GMAIL_SMTP_USER=your_google_email@gmail.com
+GMAIL_SMTP_PASS="your_google_app_password"
+
+
+# =========================
+# Yandex SMTP     работает (дурацкие настройки в аккаунте)
+# =========================
+
+YANDEX_SMTP_HOST=smtp.yandex.ru
+YANDEX_SMTP_PORT=465
+YANDEX_SMTP_SECURE=true
+YANDEX_SMTP_USER=your_yandex_email@yandex.ru
+YANDEX_SMTP_PASS=your_yandex_app_password
+
+
+# Очень массовая отправка
+Если отправлять прям много за раз, то могут забанить
+Пока что нет задержки между отправками, чтобы побороть это

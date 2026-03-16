@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Email Sender</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Отправка Email</h2>
+
+<form id="mailForm">
+
+    <label>Провайдер:</label>
+    <select id="provider">
+        <option value="gmail">Gmail</option>
+        <option value="yandex">Yandex</option>
+    </select>
+
+    <br><br>
+
+    <label>Адресаты (через запятую):</label><br>
+    <textarea id="recipients" rows="3"></textarea>
+
+    <br><br>
+
+    <label>Или загрузить CSV:</label>
+    <input type="file" id="csvFile" accept=".csv">
+
+    <br><br>
+
+    <label>Тема:</label><br>
+    <input type="text" id="subject">
+
+    <br><br>
+
+    <label>Текст письма:</label><br>
+    <textarea id="text" rows="6"></textarea>
+
+    <br><br>
+
+    <label>Вложения:</label><br>
+    <input type="file" id="attachments" multiple>
+
+    <div id="dropZone" style="border:1px dashed #000; padding:20px; margin-top:10px;">
+        Перетащите файлы сюда
+    </div>
+
+    <ul id="fileList"></ul>
+
+    <br>
+
+    <button type="submit">Отправить</button>
+
+</form>
+
+<script src="script.js"></script>
+
+</body>
+</html>
