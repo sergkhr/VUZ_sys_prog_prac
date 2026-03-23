@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>DB Client</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Работа с базой данных</h2>
+
+<!-- SQL ввод -->
+<div>
+    <textarea id="queryInput" placeholder="Введите SQL запрос"></textarea>
+    <br>
+    <button id="runQuery">Выполнить</button>
+</div>
+
+<div>
+    <h3>Действия</h3>
+    <button id="insertBtn">INSERT</button>
+    <button id="updateBtn">UPDATE</button>
+    <button id="deleteBtn">DELETE</button>
+</div>
+
+<hr>
+
+<!-- Таблицы -->
+<div>
+    <button id="loadTables">Получить таблицы</button>
+    <ul id="tablesList"></ul>
+</div>
+
+<hr>
+
+<!-- Результат -->
+<div>
+    <h3>Результат</h3>
+    <table id="resultTable"></table>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
